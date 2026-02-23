@@ -10,6 +10,7 @@ import math
 # Конфигурация
 VK_TOKEN = "vk1.a.niwLTYj0OoJ0UdULM3MTnvexSLVsLuYr4_jH2Zr10SCDmyg79AjugdUmmkn6Ju-4s2Std7s-gCkYkafqtiGf79vChqjYa2Mk-IloP1HDd7A4NfypIQ1L_SngypDjKearC5O0_haOMXhYnsmkPRYL_kCuiZW92lhPdVmZ1ghcpj_c1AUvSeE0p8Je8K6kLlTeqwGSb7DltcrY0vm0AaOvdg"
 GROUP_ID = 218666977  # ID твоей группы
+TARGET_POST_ID = 439
 SECRET_CODE = "3461687"  # Загаданный код из 7 цифр
 
 
@@ -332,4 +333,5 @@ class VKBot:
 if __name__ == "__main__":
     init_db()
     bot = VKBot(VK_TOKEN)
+
     bot.run()
