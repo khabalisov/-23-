@@ -1,3 +1,11 @@
+import subprocess
+import sys
+
+try:
+    import vk_api
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "vk_api"])
+    import vk_api
 import vk_api
 from vk_api.longpoll import VkLongPoll, VkEventType
 from vk_api.utils import get_random_id
@@ -344,3 +352,4 @@ if __name__ == "__main__":
     init_db()
     bot = VKBot(VK_TOKEN)
     bot.run()
+
